@@ -1,0 +1,26 @@
+/* --- Slide --- */
+.slide {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border: 2px solid var(--color-secondary);
+  /* secondary accent border */
+  border-radius: 20px;
+  background-color: var(--color-surface);
+  /* pure white for contrast */
+  opacity: 0;
+  z-index: 3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* subtle shadow */
+}
+
+/* --- Active Slide --- */
+.slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 4;
+}

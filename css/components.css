@@ -1,0 +1,50 @@
+/* Highlighted text (optional) */
+.highlight {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--color-accent);
+  /* institutional red accent */
+}
+
+/* MathJax */
+mjx-contai {
+  font-family: 'STIX Two Math', serif;
+  font-size: 1rem !important;
+}
+
+/* --- Callouts --- */
+.callout {
+  background-color: var(--color-callout);
+  /* warm yellow */
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: var(--color-primary);
+}
+
+/* --- Counter --- */
+#counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  /* adds breathing room */
+  position: absolute;
+  height: 30px;
+  width: 200px;
+  padding: 0 10px;
+  /* so text doesn't touch edges */
+  bottom: -80px;
+  right: 0;
+
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid var(--color-secondary);
+  border-radius: 20px;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 0.8rem;
+  z-index: 10;
+}
+
+#counter span {
+  margin: 0;
+}

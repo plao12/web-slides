@@ -1,0 +1,58 @@
+/* Reset and box-sizing fix */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: clamp(12px, 1vw + 12px, 18px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --- Body --- */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg);
+  /* soft gray */
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
+  /* main text */
+  z-index: 0;
+  overflow: hidden;
+}
+
+h1, h2, p {
+  white-space: normal;   /* allows wrapping */
+  overflow-wrap: break-word; /* breaks long words if necessary */
+  word-break: break-word;    /* fallback for older browsers */
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: 1.5;
+}

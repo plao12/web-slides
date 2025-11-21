@@ -1,0 +1,9 @@
+.frame {
+  display: inline-block;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.frame.active {
+  opacity: 1;
+}

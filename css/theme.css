@@ -1,0 +1,19 @@
+/* theme.css */
+:root {
+  /* Primary brand colors */
+  --color-primary: #003366;     /* institutional blue */
+  --color-secondary: #0055A5;   /* secondary accent */
+  --color-accent: #AD3333;      /* institutional red */
+
+  /* Backgrounds */
+  --color-bg: #F5F5F5;          /* soft gray background */
+  --color-surface: #FFFFFF;     /* white card surface */
+
+  /* Text colors */
+  --color-text: #333333;
+  --color-text-light: #555555;
+  --color-text-muted: #777777;
+
+  /* Utility / callout colors */
+  --color-callout: #FFC857;     /* warm yellow */
+}

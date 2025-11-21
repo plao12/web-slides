@@ -1,0 +1,140 @@
+/* --- Content definition --- */
+.content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+  z-index: 5;
+}
+
+/* --- First --- */
+.content.first {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  row-gap: 4%;
+}
+
+.content.first h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-primary);
+  font-size: 3.2rem;      /* much larger */
+  font-weight: 800;       /* bolder */
+  letter-spacing: 0.02em; /* subtle title touch */
+  text-align: center;
+}
+
+.content.first header h1 {
+  font-size: clamp(2.5rem, 4vw, 3.2rem); /* responsive */
+  line-height: 1.2;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content.first .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  text-align: center;
+  row-gap: 10%;
+  height: 45%;
+  width: 100%
+}
+
+/* --- Empty --- */
+.content.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content.empty .body {
+  height: 100%;
+  width: 100%;
+}
+
+/* --- Title Body --- */
+.content.title-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content.title-body header {
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  height: 15%;
+  border-bottom: 2px solid var(--color-secondary);
+  padding: 2%;
+}
+
+.content.title-body header.l {
+  justify-content: flex-start;
+}
+
+.content.title-body header.r {
+  justify-content: flex-end;
+}
+
+.content.title-body .body {
+  opacity: 1;
+  height: 85%;
+  padding: 2%;
+}
+
+/* --- Elements --- */
+.content.first .author,
+.content.first .affiliation,
+.content.first .date {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--color-text-light);
+  margin: 0.2em 0;
+  font-size: 1rem;
+}
+
+.content.first .author {
+  font-weight: 600; /* slightly bolder */
+}
+
+.content.first .date {
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+
+figure.logo-up {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  bottom: 0;
+  height: 60%;
+  width: auto;
+}
+
+figure.logo-up img {
+  height: 100%;
+  width: 100%;
+}
+
+figure.h-model {
+  position: relative;
+  height: 100%;
+  width: 80%;
+  margin: 0;
+}
+
+figure.h-model img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}

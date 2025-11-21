@@ -1,0 +1,10 @@
+.screen {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 80%;
+  row-gap: 5%;
+  z-index: 1;
+}
