@@ -20,14 +20,18 @@
 .content.first h1 {
   font-family: 'Montserrat', sans-serif;
   color: var(--color-primary);
-  font-size: 3.2rem;      /* much larger */
-  font-weight: 800;       /* bolder */
-  letter-spacing: 0.02em; /* subtle title touch */
+  font-size: 3.2rem;
+  /* much larger */
+  font-weight: 800;
+  /* bolder */
+  letter-spacing: 0.02em;
+  /* subtle title touch */
   text-align: center;
 }
 
 .content.first header h1 {
-  font-size: clamp(2.5rem, 4vw, 3.2rem); /* responsive */
+  font-size: clamp(2.5rem, 4vw, 3.2rem);
+  /* responsive */
   line-height: 1.2;
   font-weight: 800;
   text-align: center;
@@ -99,11 +103,12 @@
   font-weight: 400;
   color: var(--color-text-light);
   margin: 0.2em 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .content.first .author {
-  font-weight: 600; /* slightly bolder */
+  font-weight: 600;
+  /* slightly bolder */
 }
 
 .content.first .date {

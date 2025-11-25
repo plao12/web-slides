@@ -7,7 +7,7 @@ body {
 }
 
 html {
-  font-size: clamp(12px, 1vw + 12px, 18px);
+  font-size: clamp(16px, 1.5vw + 12px, 24px);
 }
 
 *,
@@ -30,12 +30,16 @@ body {
   overflow: hidden;
 }
 
-h1, h2, p {
-  white-space: normal;   /* allows wrapping */
-  overflow-wrap: break-word; /* breaks long words if necessary */
-  word-break: break-word;    /* fallback for older browsers */
+h1,
+h2,
+p {
+  white-space: normal;
+  /* allows wrapping */
+  overflow-wrap: break-word;
+  /* breaks long words if necessary */
+  word-break: break-word;
+  /* fallback for older browsers */
 }
-
 
 h1 {
   text-align: center;
@@ -51,8 +55,12 @@ h2 {
   margin: 0;
 }
 
-p {
+p,
+ul,
+ol,
+dl {
   font-weight: 400;
   color: var(--color-text);
   line-height: 1.5;
+  font-size: 1.5rem;
 }
